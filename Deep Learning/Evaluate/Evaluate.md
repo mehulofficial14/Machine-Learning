@@ -19,7 +19,7 @@
             
         - Sparse Categorical Cross Entropy
 - Regression evaluation metrics
-    - Mean-Absolute Error = $\frac{1}{n}\sum_{j = 1}^{n}{|y_{j} - \hat{y_j}|}$
+    - Mean-Absolute Error = $\frac{1}{n}{\sum_{j = 1}^{n}{|y_{j} - \hat{y_j}|}}$
     - Mean-Squared Error = $\frac{1}{n}\sum_{j = 1}^{n}{(y_{j} - \hat{y_j}) ^ 2}$
     - Root-Mean-Squared Error = $\sqrt{\frac{1}{n}\sum_{j = 1}^{n}{(y_{j} - \hat{y_j}) ^ 2}}$
     - R-Squared (Coefficient of Determination)
