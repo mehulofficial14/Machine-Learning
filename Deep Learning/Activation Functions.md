@@ -4,7 +4,9 @@
 - Step Function
     - For some $\theta$ (the threshold value),
         
-        $f(x) = \Biggl\{ \begin{matrix} 1  ~ ~ ~ if ~ ~ ~ x \ge \theta \\ 0 ~ ~ ~ otherwise\end{matrix}$
+        $f(x) = 1 ~ ~ ~ \forall ~ ~ x \ge 0$
+        
+        $f(x) = 0 ~ ~ ~ \forall ~ ~ x < 0$
         
     - Code:
         
@@ -55,9 +57,11 @@
 - Leaky ReLU Function
     - To avoid the dying ReLU problem,
         
-        $f(x) = \Biggl\{ \begin{matrix} x  ~ ~ ~ if ~ ~ ~ x \ge 0 \\ a \cdot x ~ ~ ~ otherwise\end{matrix}$
+        $f(x) = x ~ ~ ~ \forall ~ ~ x \ge 0$
         
-    - The value of ‘a’ (also known as the scaling factor): very small but not 0
+        $f(x) = \alpha \cdot x ~ ~ ~ \forall ~ ~ x < 0$
+        
+    - The value of $\alpha$ (also known as the scaling factor): very small but not 0
     - Code:
         
         ```python
